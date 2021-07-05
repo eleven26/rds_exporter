@@ -1,0 +1,29 @@
+dist: build
+builds:
+  - binary: rds_exporter
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - 386
+      - amd64
+    flags:
+      - -v
+    ldflags:
+      - -s -w -X main.commit={{.ShortCommit}} -X main.buildDate={{.Date}}
+archives:
+  - name_template: "{{ .ProjectName }}-{{ .Version }}.{{ .Os }}-{{ .Arch }}"
+    wrap_in_directory: true
+snapshot:
+  name_template: "{{ .ShortCommit }}"
+changelog:
+  skip: true
+release:
+  github:
+    owner: eleven26
+    name: rds_exporter
+  draft: true
+  prerelease: auto

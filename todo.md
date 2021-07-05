@@ -1,0 +1,1 @@
+- MySQL_ReplicationThread、MySQL_ReplicationDelay 指标返回

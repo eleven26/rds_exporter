@@ -1,0 +1,8 @@
+# rds 实例 id
+instance_id: ""
+
+# rds access key id
+access_key_id: ""
+
+# rds access key secret
+access_key_secret: ""

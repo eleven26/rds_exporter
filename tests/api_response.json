@@ -1,0 +1,529 @@
+{
+   "headers": {
+      "access-control-allow-headers": "X-Requested-With, X-Sequence, _aop_secret, _aop_signature",
+      "access-control-allow-methods": "POST, GET, OPTIONS",
+      "access-control-allow-origin": "*",
+      "access-control-max-age": "172800",
+      "connection": "keep-alive",
+      "content-type": "application/json;charset=utf-8",
+      "date": "Mon, 28 Jun 2021 02:18:06 GMT",
+      "vary": "Accept-Encoding",
+      "x-acs-request-id": "83945AC5-CB18-4D59-9596-7827B2D16C85"
+   },
+   "body": {
+      "PerformanceKeys": {
+         "PerformanceKey": [
+            {
+               "Key": "MySQL_COMDML",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "0.0&0.07&0.0&0.0&0.0&1.2&0.0",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.07&0.0&0.0&0.0&1.23&0.0",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.07&0.0&0.0&0.0&1.2&0.0",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.07&0.0&0.0&0.0&1.23&0.0",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.07&0.0&0.0&0.0&1.2&0.0",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "com_delete&com_insert&com_insert_select&com_replace&com_replace_select&com_select&com_update"
+            },
+            {
+               "Key": "MySQL_QPSTPS",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "3.63&0.07",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "3.72&0.07",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "3.63&0.07",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "3.82&0.07",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "3.63&0.07",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "QPS&TPS"
+            },
+            {
+               "Key": "MySQL_InnoDBBufferRatio",
+               "Unit": "%",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "100.0&65.16&3.73",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "100.0&65.16&3.78",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "100.0&65.16&3.78",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "100.0&65.16&3.78",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "100.0&65.16&3.78",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "ibuf_read_hit&ibuf_use_ratio&ibuf_dirty_ratio"
+            },
+            {
+               "Key": "MySQL_TempDiskTableCreates",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "1.0",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "1.0",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "1.0",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "1.0",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "1.0",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "tb_tmp_disk"
+            },
+            {
+               "Key": "MySQL_NetworkTraffic",
+               "Unit": "KB",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "5.08&5.76",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "5.11&5.85",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "5.08&5.76",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "5.11&5.94",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "5.08&5.76",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "recv_k&sent_k"
+            },
+            {
+               "Key": "MySQL_InnoDBDataReadWriten",
+               "Unit": "KB",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "0.0&0.09",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.23",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.09",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.09",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.09",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "inno_data_read&inno_data_written"
+            },
+            {
+               "Key": "MySQL_MyISAMKeyReadWrites",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "0.0&0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "myisam_keyr_r&myisam_keyr_w&myisam_keyr&myisam_keyw"
+            },
+            {
+               "Key": "MySQL_RowDML",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "10.07&0.07&0.0&10.0&0.13",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "10.07&0.07&0.0&10.0&0.13",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "10.07&0.07&0.0&10.0&0.13",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "10.07&0.07&0.0&10.0&0.13",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "10.07&0.07&0.0&10.0&0.13",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "inno_row_readed&inno_row_update&inno_row_delete&inno_row_insert&Inno_log_writes"
+            },
+            {
+               "Key": "MySQL_InnoDBLogRequests",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "23.8&20.47",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "27.37&21.9",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "23.8&20.47",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "23.8&20.47",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "23.8&20.47",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "ibuf_request_r&ibuf_request_w"
+            },
+            {
+               "Key": "MySQL_IOPS",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "1.25",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "1.02",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "1.1",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "1.37",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "1.02",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "io"
+            },
+            {
+               "Key": "slavestat",
+               "Unit": "null",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "0&0&0",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "0&0&0",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "0&0&0",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "0&0&0",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "0&0&0",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "iothread&sqlthread&slave-lag"
+            },
+            {
+               "Key": "MySQL_MyISAMKeyBufferRatio",
+               "Unit": "%",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "0.0&0.0&0.0",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "Key_usage_ratio&Key_read_hit_ratio&Key_write_hit_ratio"
+            },
+            {
+               "Key": "MySQL_InnoDBLogWrites",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "0.05&0.13&0.13",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "0.12&0.13&0.13",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "0.05&0.13&0.13",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "0.05&0.13&0.13",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "0.05&0.13&0.13",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "Innodb_log_write_requests&Innodb_log_writes&Innodb_os_log_fsyncs"
+            },
+            {
+               "Key": "MySQL_MemCpuUsage",
+               "Unit": "%",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "0.45&0.62",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "0.45&0.63",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "0.45&0.62",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "0.45&0.63",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "0.43&0.63",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "cpuusage&memusage"
+            },
+            {
+               "Key": "MySQL_Sessions",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "0.0&5.0",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "0.0&5.0",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "0.0&5.0",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "0.0&5.0",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "0.0&5.0",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "active_session&total_session"
+            },
+            {
+               "Key": "MySQL_ThreadStatus",
+               "Unit": "int",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "1.0&10.0",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "1.0&10.0",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "1.0&10.0",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "1.0&10.0",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "1.0&10.0",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "threads_running&threads_connected"
+            },
+            {
+               "Key": "MySQL_DetailedSpaceUsage",
+               "Unit": "MB",
+               "Values": {
+                  "PerformanceValue": [
+                     {
+                        "Value": "1402.01&128.39&1.51&0.0&1272.1",
+                        "Date": "2021-06-25T00:00:00Z"
+                     },
+                     {
+                        "Value": "1402.01&128.39&1.52&0.0&1272.1",
+                        "Date": "2021-06-25T00:01:00Z"
+                     },
+                     {
+                        "Value": "1402.01&128.39&1.52&0.0&1272.1",
+                        "Date": "2021-06-25T00:02:00Z"
+                     },
+                     {
+                        "Value": "1402.01&128.39&1.52&0.0&1272.1",
+                        "Date": "2021-06-25T00:03:00Z"
+                     },
+                     {
+                        "Value": "1402.01&128.39&1.52&0.0&1272.1",
+                        "Date": "2021-06-25T00:04:00Z"
+                     }
+                  ]
+               },
+               "ValueFormat": "ins_size&data_size&log_size&tmp_size&other_size"
+            },
+            {
+               "Key": "MySQL_ReplicationThread",
+               "Unit": "on/off",
+               "Values": {},
+               "ValueFormat": "iothread&sqlthread"
+            },
+            {
+               "Key": "MySQL_ReplicationDelay",
+               "Unit": "s",
+               "Values": {},
+               "ValueFormat": "replication-lag"
+            }
+         ]
+      },
+      "EndTime": "2021-06-25T00:05Z",
+      "RequestId": "83945AC5-CB18-4D59-9596-7827B2D16C85",
+      "DBInstanceId": "rm-wz9uu9pu2zush4481",
+      "StartTime": "2021-06-25T00:00Z",
+      "Engine": "MySQL"
+   }
+}
