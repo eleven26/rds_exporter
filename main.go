@@ -28,6 +28,10 @@ func parseConfig(path *string) exporter.Config {
 		panic(err)
 	}
 
+	if conf.InstanceAlias == "" {
+		conf.InstanceAlias = conf.InstanceId
+	}
+
 	return conf
 }
 
@@ -40,6 +44,7 @@ func main() {
 
 	log.Printf("监听地址：%s", *address)
 	log.Printf("rds 实例id：%s", conf.InstanceId)
+	log.Printf("rds 实例别名：%s", conf.InstanceAlias)
 
 	http.HandleFunc("/metrics", func(w http.ResponseWriter, r *http.Request) {
 		response, err := exporter.FetchLastMinuteDBInstancePerformance(exporter.Config{
@@ -53,7 +58,9 @@ func main() {
 
 		// log.Println(response.Json())
 
-		w.Write([]byte(response.Html()))
+		html := response.Html()
+		html = response.AppendAlias(html, conf.InstanceAlias)
+		w.Write([]byte(html))
 	})
 
 	log.Fatal(http.ListenAndServe(*address, nil))
