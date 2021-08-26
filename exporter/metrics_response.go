@@ -209,12 +209,3 @@ func (mp *MetricsResponse) Json() string {
 
 	return string(res)
 }
-
-func (mp *MetricsResponse) AppendAlias(html string, alias string) string {
-	formattedAlias := fmt.Sprintf(`# HELP The alias of rds instance.
-# TYPE instance_alias gauge
-instance_alias %s
-`, alias)
-
-	return html + formattedAlias
-}

@@ -1,9 +1,6 @@
 # rds 实例 id
 instance_id: ""
 
-# rds 实例别名
-instance_alias: ""
-
 # rds access key id
 access_key_id: ""
 
